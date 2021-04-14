@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
+
+    <title>Profile patient</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="assets/css/patient-profile.css">
+    <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!-- Custom styles for our template -->
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top headroom">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="HealMe HTML5 template"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profil <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Deconnexion</a></li>
+                            <li class="active"><a href="about.html">Aide</a></li>
+                        </ul>
+                    </li>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <!-- /.navbar -->
+
+    <header id="head" class="secondary"></header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+
+            </div>
+            <div class="col-lg-100 col-lg-100 col-lg-100 col-lg-100 col-lg-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Profile du patient</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 " align="center"> </div>
+
+                            <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
+                  <dl>
+                    <dt>DEPARTMENT:</dt>
+                    <dd>Administrator</dd>
+                    <dt>HIRE DATE</dt>
+                    <dd>11/12/2013</dd>
+                    <dt>DATE OF BIRTH</dt>
+                       <dd>11/12/2013</dd>
+                    <dt>GENDER</dt>
+                    <dd>Male</dd>
+                  </dl>
+                </div>-->
+                            <div class=" col-md-9 col-lg-9 ">
+                                <table class="table table-user-information">
+                                    <tbody>
+                                        <tr>
+                                            <td> <b>Information personnelle: </b></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nom du patient:</td>
+                                            <td> David Jean</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <tr>
+                                                <td>Adresse postale:</td>
+                                                <td>18 rue de la croix nivert 75012 Paris</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mobile:</td>
+                                                <td>0743749276</td>
+                                            </tr>
+
+
+                                        </tr>
+
+                                        </tr>
+                                        <td>Groupe sanguin:</td>
+                                        <td> O+ </td>
+
+                                        </tr>
+
+                                        </tr>
+                                        <td>Allergies:</td>
+                                        <td> Pollen </td>
+
+                                        </tr>
+
+                                        </tr>
+                                        <td> <b> Information médicale:</b></td>
+                                        <td> RAS</td>
+
+                                        </tr>
+
+
+                                        <div class="container">
+                                            <div class="row clearfix">
+                                                <div class="col-md-12 table-responsive">
+                                                    <table class="table table-bordered table-hover table-sortable" id="tab_logic">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="text-center">
+                                                                    Nom du médecin
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Date
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Contenu
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Type
+                                                                </th>
+                                                                <th class="text-center" style="border-top: 1px solid #ffffff; border-right: 1px solid #ffffff;">
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr id='addr0' data-id="0" class="hidden">
+                                                                <td data-name="name">
+                                                                    <input type="text" name='name0' placeholder='Votre nom' class="form-control" />
+                                                                </td>
+                                                                <td data-name="mail">
+                                                                    <input type="text" name='mail0' placeholder='Date' class="form-control" />
+                                                                </td>
+                                                                <td data-name="desc">
+                                                                    <textarea name="desc0" placeholder="L'information que vous voulez transmettre" class="form-control"></textarea>
+                                                                </td>
+                                                                <td data-name="sel">
+                                                                    <select name="sel0">
+                                                                        <option value="">Selectionner Type</option>
+                                                                        <option value="1">Traitement</option>
+                                                                        <option value="2">Vaccin</option>
+                                                                        <option value="3">Bilan de santé</option>
+                                                                        <option value="4">Allergies</option>
+
+                                                                    </select>
+                                                                </td>
+                                                                <td data-name="del">
+                                                                    <button name="del0" class='btn btn-danger glyphicon glyphicon-remove row-remove'>
+                                                                        <span aria-hidden="true">Supprimer</span>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <a id="add_row" class="btn btn-primary float-right">Ajouter une ligne</a>
+                                        </div>
+
+
+                                    </tbody>
+                                </table>
+                                <a href="patient-profile-maj.html" class="btn btn-primary" style="width:150px">Sauvegarder</a>
+
+                                <a href="#" class="btn btn-primary" style="width:140px">Accueil</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="top-space">
+
+
+
+        <div class="footer1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 widget">
+                        <h3 class="widget-title">Contact</h3>
+                        <div class="widget-body">
+                            <p><br>
+                                <a href="mailto:#">support.healme@gmail.com</a><br>
+                                <br>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-3 widget">
+                        <h3 class="widget-title">Suivez nous !</h3>
+                        <div class="widget-body">
+                            <p class="follow-me-icons">
+                                <a href=""><i class="fa fa-twitter fa-2"></i></a>
+                                <a href=""><i class="fa fa-dribbble fa-2"></i></a>
+                                <a href=""><i class="fa fa-github fa-2"></i></a>
+                                <a href=""><i class="fa fa-facebook fa-2"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 widget">
+                        <h3 class="widget-title"></h3>
+                        <div class="widget-body">
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- /row of widgets -->
+            </div>
+        </div>
+
+
+
+        <div class="footer2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 widget">
+                        <div class="widget-body">
+                            <p class="simplenav">
+                                <a href="#">Accueil</a> |
+                                <a href="contact.html">Contact</a> |
+                                <b><a href="signup.html">S'inscrire</a></b>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 widget">
+                        <div class="widget-body">
+                            <p class="text-right">
+                                Copyright &copy; 2021, HealMe </a>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- /row of widgets -->
+            </div>
+        </div>
+
+
+
+    </footer>
+</body>
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="assets/js/patient-profile.js"></script>
+
+
+</html>
